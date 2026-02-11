@@ -9,7 +9,7 @@ function App() {
   const [Uy_Manzili, setUyManzili] = useState('');
 
   const fetchData = () => {
-    fetch('http://localhost:5098/api/Zakaslar')
+    fetch('https://localhost:5098/api/Zakaslar')
       .then(res => res.json())
       .then(resData => setData(resData))
       .catch(err => console.error(err));
